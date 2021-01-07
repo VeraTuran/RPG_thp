@@ -3,6 +3,10 @@ class Character {
     this.hp = hp;
     this.dmg = dmg;
   }
+  printStats(){
+    console.log("Points de vie : " + this.hp);
+    console.log("Dommages : " + this.dmg);
+  }
 }
 
 class Fighter extends Character {
@@ -16,3 +20,4 @@ class Paladin extends Character {
     super(hp, dmg)
   }
 }
+
